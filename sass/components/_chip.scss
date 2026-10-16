@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.chip {
+  display: inline-block;
+  padding: $space-1 0.625rem;
+  border-radius: $radius-pill;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  &--video {
+    background: $color-chip-video-bg;
+    color: $color-chip-video-fg;
+  }
+
+  &--audio {
+    background: $color-chip-audio-bg;
+    color: $color-chip-audio-fg;
+  }
+}

@@ -1,0 +1,21 @@
+// Emits the Sass tokens as CSS custom properties (loaded into @layer tokens).
+@use 'index' as *;
+
+:root {
+  --color-bg: #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-band: #{$color-band};
+  --color-ink: #{$color-ink};
+  --color-muted: #{$color-muted};
+  --color-line: #{$color-line};
+  --color-accent: #{$color-accent};
+  --color-accent-dark: #{$color-accent-dark};
+  --color-accent-light: #{$color-accent-light};
+  --color-on-accent: #{$color-on-accent};
+  --color-dark: #{$color-dark};
+  --color-on-dark: #{$color-on-dark};
+  --color-focus: #{$color-focus};
+
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+}

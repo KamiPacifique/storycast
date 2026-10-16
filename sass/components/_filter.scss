@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+// Progressive enhancement: hidden in the HTML, revealed by main.js.
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__button {
+  min-height: 2.75rem;
+  padding-inline: $space-6;
+  border: 2px solid var(--color-ink);
+  border-radius: $radius-pill;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-surface);
+  }
+
+  &[aria-pressed='true'] {
+    background: var(--color-ink);
+    color: var(--color-bg);
+  }
+}
+
+.filter__status {
+  margin-block: $space-4 $space-6;
+  font-size: $text-small;
+  color: var(--color-muted);
+}

@@ -1,0 +1,14 @@
+{
+  "name": "storycast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StoryCast: accessible audio and video storytelling microsite (HTML, Sass, vanilla JS)",
+  "scripts": {
+    "build": "sass sass/main.scss css/main.css --no-source-map",
+    "watch": "sass --watch sass/main.scss css/main.css",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

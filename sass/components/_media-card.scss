@@ -1,0 +1,109 @@
+@use '../abstracts' as *;
+
+// ── Container-queried component ─────────────────────────────────────────────
+// The wrapper is the query container. The card lays itself out as a row when
+// its container is wide, and stacks (image on top) when the container shrinks.
+// This is based on the card's own space, not the viewport, so the same card
+// works in a 3-up grid, a 2-up grid, or a narrow sidebar.
+.media-card-wrap {
+  container: media / inline-size;
+  display: grid; // lets the card stretch to equal height in a grid row
+}
+
+.media-card {
+  position: relative; // anchor for the stretched link
+  display: grid;
+  grid-template-columns: 13.75rem 1fr; // 220px image | text
+  align-content: start; // don't spread rows when the card is stretched
+  gap: $space-6;
+  padding: $space-4;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: $radius-md;
+
+  // No box: used where the card sits directly on the page (weekly picks)
+  &--plain {
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+
+  &__thumb {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: $radius-sm;
+    background: linear-gradient(135deg, var(--g1), var(--g2));
+  }
+
+  &__body {
+    display: grid;
+    align-content: start;
+    gap: $space-2;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $space-1 $space-3;
+    font-size: $text-small;
+    color: var(--color-muted);
+  }
+
+  &__title {
+    font-size: $text-h4;
+    line-height: $leading-snug;
+  }
+
+  &__link {
+    color: var(--color-ink);
+    text-decoration: none;
+
+    // Stretched link: the whole card is clickable, one tab stop per card
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-ink);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &:has(&__link:focus-visible) {
+    @include focus-ring;
+  }
+
+  &__desc {
+    color: var(--color-muted);
+  }
+
+  &__byline {
+    font-size: $text-small;
+    font-weight: 500;
+  }
+}
+
+// Container narrower than 480px → stack
+@container media (max-width: 479px) {
+  .media-card {
+    grid-template-columns: 1fr;
+    gap: $space-4;
+  }
+
+  .media-card__thumb {
+    aspect-ratio: 16 / 10;
+  }
+
+  .media-card__title {
+    font-size: $text-h3;
+  }
+}

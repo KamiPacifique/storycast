@@ -1,0 +1,53 @@
+// StoryCast: main stylesheet
+// Cascade layers make precedence explicit and order-independent:
+// later layers always beat earlier ones, regardless of selector specificity.
+@use 'sass:meta';
+
+@layer reset, tokens, base, layout, components, pages, utilities;
+
+@layer tokens {
+  @include meta.load-css('abstracts/tokens');
+}
+
+@layer reset {
+  @include meta.load-css('base/reset');
+}
+
+@layer base {
+  @include meta.load-css('base/base');
+  @include meta.load-css('base/focus');
+}
+
+@layer layout {
+  @include meta.load-css('layout/container');
+  @include meta.load-css('layout/grid');
+  @include meta.load-css('layout/header');
+  @include meta.load-css('layout/footer');
+}
+
+@layer components {
+  @include meta.load-css('components/button');
+  @include meta.load-css('components/chip');
+  @include meta.load-css('components/play-badge');
+  @include meta.load-css('components/media-card');
+  @include meta.load-css('components/hero');
+  @include meta.load-css('components/featured');
+  @include meta.load-css('components/filter');
+  @include meta.load-css('components/cta');
+  @include meta.load-css('components/feature-card');
+  @include meta.load-css('components/steps');
+  @include meta.load-css('components/breadcrumb');
+  @include meta.load-css('components/player');
+  @include meta.load-css('components/transcript');
+  @include meta.load-css('components/panel');
+}
+
+@layer pages {
+  @include meta.load-css('pages/home');
+  @include meta.load-css('pages/story');
+  @include meta.load-css('pages/about');
+}
+
+@layer utilities {
+  @include meta.load-css('utilities/utilities');
+}

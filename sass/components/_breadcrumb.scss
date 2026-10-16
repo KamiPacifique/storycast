@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.breadcrumb {
+  padding-block: $space-6 $space-2;
+  font-size: $text-small;
+  color: var(--color-muted);
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: '/';
+  margin-inline-start: $space-2;
+}
+
+.breadcrumb__link {
+  color: var(--color-muted);
+}

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+// One consistent, high-contrast focus ring for every interactive element.
+:focus-visible {
+  @include focus-ring;
+}
+
+// Mouse clicks should not draw a ring; keyboard focus always does.
+:focus:not(:focus-visible) {
+  outline: none;
+}

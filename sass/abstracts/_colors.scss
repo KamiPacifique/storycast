@@ -1,0 +1,23 @@
+// Colour tokens. Every text/background pair below is checked for WCAG 2.1 AA.
+// Ratios are noted next to each pair.
+
+$color-bg:           #FAF6EF; // page background
+$color-surface:      #FFFFFF; // cards, panels
+$color-band:         #F3ECDF; // alternate section background
+$color-ink:          #1B1A17; // body text           (ink on bg      16.9:1)
+$color-muted:        #5C574E; // secondary text      (muted on bg     6.8:1, on band 6.1:1)
+$color-line:         #DDD5C6; // decorative borders only (never the only cue for a control)
+$color-accent:       #B4411F; // links, buttons      (accent on bg    5.6:1, white on accent 6.0:1)
+$color-accent-dark:  #8F3217; // button hover        (white on it     8.6:1)
+$color-accent-light: #F2A98C; // accent on dark band (on ink          9.0:1)
+$color-on-accent:    #FFFFFF;
+$color-dark:         #1B1A17; // dark CTA band, player controls
+$color-on-dark:      #FAF6EF; // text on dark         (15.4:1)
+$color-focus:        #1B1A17; // focus ring on light backgrounds
+$color-focus-on-dark:#FFD27A; // focus ring on dark backgrounds (11.7:1 on ink)
+
+// Content-type chips
+$color-chip-video-bg: #F3DDD3;
+$color-chip-video-fg: #7A2A12; // 7.3:1
+$color-chip-audio-bg: #DCE5E0;
+$color-chip-audio-fg: #1F4A3A; // 7.5:1

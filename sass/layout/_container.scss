@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.container {
+  width: min(100%, #{$content-max});
+  margin-inline: auto;
+  padding-inline: clamp(#{$space-6}, 6.67vw, #{$space-24});
+}
+
+.section {
+  padding-block: clamp(#{$space-8}, 5vw, #{$space-16});
+
+  &--band {
+    background: var(--color-band);
+  }
+
+  &--tight {
+    padding-block: $space-6;
+  }
+}
+
+.section__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: $space-2 $space-6;
+  margin-block-end: $space-8;
+}
+
+.section__title {
+  font-size: $text-h2;
+}
+
+.section__note {
+  font-size: $text-small;
+  color: var(--color-muted);
+}

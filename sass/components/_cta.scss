@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.cta {
+  --color-focus: #{$color-focus-on-dark}; // ring must contrast with the dark band
+  padding-block: clamp(#{$space-12}, 7vw, #{$space-24});
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+}
+
+.cta__inner {
+  display: grid;
+  gap: $space-6;
+  justify-items: start;
+}
+
+.cta__title {
+  max-width: 18ch;
+  font-size: clamp(2.25rem, 1.5rem + 3.5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.cta__accent {
+  font-style: italic;
+  color: var(--color-accent-light);
+}
+
+.cta__text {
+  max-width: 40rem;
+  font-size: $text-lead;
+  color: #e4ddcf; // 12.3:1 on the dark band
+}

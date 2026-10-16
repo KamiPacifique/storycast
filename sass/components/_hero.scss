@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.hero {
+  padding-block: clamp(#{$space-12}, 8vw, #{$space-24}) clamp(#{$space-8}, 5vw, #{$space-12});
+}
+
+.hero__inner {
+  display: grid;
+  gap: $space-6;
+  justify-items: start;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: $text-small;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.hero__title {
+  max-width: 11em;
+  font-size: $text-display;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero__accent {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.hero__lead {
+  max-width: 42rem;
+  font-size: $text-lead;
+  color: var(--color-muted);
+}

@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+// Home-specific tweaks only; everything else is a shared component.
+.library__filters {
+  margin-block-end: $space-2;
+}

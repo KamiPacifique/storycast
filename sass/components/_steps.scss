@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+// A true sequence (listen → read → report), so a real ordered list with counters.
+.steps {
+  display: grid;
+  gap: $space-6;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+
+  @include up('lg') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.steps__item {
+  display: grid;
+  align-content: start;
+  gap: $space-2;
+  padding: $space-8;
+  border: 2px solid var(--color-ink);
+  border-radius: $radius-md;
+  counter-increment: step;
+
+  &::before {
+    content: counter(step);
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    line-height: 1;
+    color: var(--color-accent);
+  }
+}
+
+.steps__title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.steps__text {
+  color: var(--color-muted);
+}

@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.grid {
+  display: grid;
+  gap: $space-6;
+
+  // 1 column → 2 → 3
+  &--cards {
+    @include up('sm') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include up('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  // 1 column → 2 (library)
+  &--pairs {
+    @include up('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About &amp; accessibility · StoryCast</title>
+  <meta name="description" content="Why StoryCast exists and how every story is built so that no listener, viewer or reader is left outside it.">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <span class="site-header__dot" aria-hidden="true"></span>
+        StoryCast<span class="visually-hidden">, home</span>
+      </a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Stories</a></li>
+          <li><a class="site-nav__link" href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="about-heading">
+      <div class="container hero__inner">
+        <p class="eyebrow">Our mission</p>
+        <h1 class="about-hero__title" id="about-heading">Everyone deserves to <span class="hero__accent">hear</span> the story.</h1>
+        <p class="hero__lead">StoryCast publishes documentary audio and film from the edges of ordinary life — and builds every piece so that no listener, viewer or reader is left outside it.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container mission">
+        <div class="mission__image" role="img" aria-label="A producer records ambient sound outdoors with a microphone on a boom pole" style="--g1: #6F8F96; --g2: #E9E2D3;"></div>
+        <div class="mission__body">
+          <h2 class="section__title" id="mission-heading">Independent, paid, and made with care</h2>
+          <p class="mission__text">We commission independent producers and first-time storytellers from around the world. Every piece is paid, edited with care, and published with captions, transcripts and descriptions from day one, not added later.</p>
+          <p class="mission__text">We are listener-supported and ad-free, so the work can stay slow, specific and human.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" id="accessibility" aria-labelledby="accessibility-heading">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" id="accessibility-heading">How StoryCast is built for everyone</h2>
+        </div>
+        <ul class="grid grid--cards" role="list">
+          <li class="feature-card">
+            <h3 class="feature-card__title">Captions on every video</h3>
+            <p class="feature-card__text">Synchronised, accurate captions are included with every film, in the original language and English.</p>
+          </li>
+          <li class="feature-card">
+            <h3 class="feature-card__title">Transcripts for every story</h3>
+            <p class="feature-card__text">Full text transcripts with speaker labels and timestamps sit beside the player and can be downloaded.</p>
+          </li>
+          <li class="feature-card">
+            <h3 class="feature-card__title">Keyboard first</h3>
+            <p class="feature-card__text">Every control is reachable and operable with the keyboard, with a skip link and clear visible focus.</p>
+          </li>
+          <li class="feature-card">
+            <h3 class="feature-card__title">Contrast that holds up</h3>
+            <p class="feature-card__text">Text and controls meet WCAG 2.1 AA contrast ratios in every state.</p>
+          </li>
+          <li class="feature-card">
+            <h3 class="feature-card__title">Screen reader support</h3>
+            <p class="feature-card__text">Semantic landmarks, logical headings and ARIA only where HTML alone falls short.</p>
+          </li>
+          <li class="feature-card">
+            <h3 class="feature-card__title">Responsive and calm</h3>
+            <p class="feature-card__text">Layouts adapt from phone to wide desktop, and motion respects reduced-motion settings.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="engage-heading">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" id="engage-heading">How to engage with the stories</h2>
+        </div>
+        <ol class="steps">
+          <li class="steps__item">
+            <h3 class="steps__title">Listen or watch</h3>
+            <p class="steps__text">Press play on any story. Captions are on by default; toggle them with the CC button.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Read along</h3>
+            <p class="steps__text">Open the transcript beside the player to follow, jump to a moment, or download the full text.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Tell us what is missing</h3>
+            <p class="steps__text">Found a barrier? Write to <a href="mailto:access@storycast.example">access@storycast.example</a> and we will fix it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container cta__inner">
+        <h2 class="cta__title" id="cta-heading">Have a story only <span class="cta__accent">you</span> can tell?</h2>
+        <p class="cta__text">We commission independent producers and first-time storytellers. Every piece is paid, edited with care, and published accessibly.</p>
+        <a class="button" href="mailto:stories@storycast.example?subject=Story%20pitch">How to contribute</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">StoryCast</p>
+          <p class="site-footer__tagline">Human stories, told in sound and image. Every story captioned, every voice transcribed.</p>
+        </div>
+        <nav aria-labelledby="footer-explore">
+          <h2 class="site-footer__heading" id="footer-explore">Explore</h2>
+          <ul class="site-footer__list">
+            <li><a class="site-footer__link" href="index.html#library">All stories</a></li>
+            <li><a class="site-footer__link" href="about.html">Our mission</a></li>
+            <li><a class="site-footer__link" href="about.html#accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="site-footer__heading" id="footer-contribute">Contribute</h2>
+          <p>Pitch a story to<br><a class="site-footer__link" href="mailto:stories@storycast.example">stories@storycast.example</a></p>
+        </div>
+      </div>
+      <p class="site-footer__legal">© 2026 StoryCast. Independent &amp; listener-supported.</p>
+    </div>
+  </footer>
+</body>
+</html>

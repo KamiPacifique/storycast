@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.about-hero__title {
+  max-width: 16ch;
+  font-size: $text-display;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.mission {
+  display: grid;
+  gap: $space-8;
+  align-items: center;
+
+  @include up('lg') {
+    grid-template-columns: 35fr 65fr;
+    gap: $space-12;
+  }
+}
+
+.mission__image {
+  aspect-ratio: 4 / 3;
+  border-radius: $radius-lg;
+  background: linear-gradient(135deg, var(--g1), var(--g2));
+}
+
+.mission__body {
+  display: grid;
+  gap: $space-4;
+  max-width: 40rem;
+}
+
+.mission__text {
+  font-size: 1.125rem;
+  color: var(--color-muted);
+}

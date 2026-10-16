@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+// Decorative play icon (aria-hidden in the HTML)
+.play-badge {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+
+  &::before {
+    content: '';
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1.1rem;
+    height: 1.25rem;
+    margin-inline-start: 0.2rem;
+    background: var(--color-ink);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+
+  &--lg::before {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &--lg::after {
+    width: 1.5rem;
+    height: 1.75rem;
+  }
+}
