@@ -76,7 +76,7 @@ npm run watch        # recompile on save
 
 ## Placeholder content
 
-- `assets/media/*` are silent-ish 30-second placeholders so the players work. Replace them with real files using the same names (or update the `<source>` paths).
+- `assets/media/` contains the media files referenced by the story pages: `share-excel-workbook.mp4`, `google-drive-access.mp4`, `wise-owl.mp3`, and `tedx-talk.mp3`. Replace them with real files using the same names (or update the `<source>` paths). Names are lowercase and URL-safe so they work on case-sensitive live servers.
 - Transcript and caption cues are spaced 5 seconds apart to match the 30s placeholders. When you swap in real media, update `data-start` / `data-seek` in each story's transcript and the timestamps in the matching `.vtt` file.
 - Story thumbnails are CSS gradients with descriptive `aria-label`s. Swap in `<img>` elements with `alt` text when you have photography.
 
