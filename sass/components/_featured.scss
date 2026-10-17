@@ -19,6 +19,16 @@
   background: linear-gradient(135deg, var(--g1), var(--g2));
 }
 
+.featured__thumb-link {
+  display: block;
+  border-radius: $radius-lg;
+
+  &:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 4px;
+  }
+}
+
 .featured__body {
   display: grid;
   gap: $space-4;
