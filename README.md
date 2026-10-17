@@ -1,9 +1,9 @@
 # StoryCast
 
-An accessible 3-page microsite for audio and video storytelling. Built with semantic HTML5, Sass and a little vanilla JavaScript. No frameworks.
+An accessible six-page microsite for audio and video storytelling. Built with semantic HTML5, Sass and a little vanilla JavaScript. No frameworks.
 
-- **Design:** see the Figma board (sitemap, content hierarchy, wireframes, high-fidelity mockups).
-- **Pages:** Home, Story (detail, 4 story files from one template), About / Access.
+- **Pages:** Home, four story detail pages, and About / Accessibility.
+- **Stories:** two videos and two audio stories, each with captions and a full transcript.
 
 ---
 
@@ -13,11 +13,11 @@ An accessible 3-page microsite for audio and video storytelling. Built with sema
 storycast/
 ├── index.html                 Home
 ├── about.html                 About / Access
-├── story/                     One file per story (same template)
-│   ├── the-net-mender.html
-│   ├── night-frequencies.html
-│   ├── wedding-photograph.html
-│   └── terraces-at-first-light.html
+├── story/                     One detail page per story
+│   ├── share-excel-workbook.html
+│   ├── google-drive-access.html
+│   ├── wise-owl.html
+│   └── tedx-talk.html
 ├── sass/
 │   ├── main.scss              Entry point: declares @layer order, loads partials
 │   ├── abstracts/             Tokens (no CSS output on their own)
@@ -36,9 +36,9 @@ storycast/
 ├── css/main.css               Compiled output (committed so the site runs without a build)
 ├── js/main.js                 Menu, library filter, transcript sync (progressive enhancement)
 ├── assets/
-│   ├── media/                 Placeholder 30s audio/video (replace with real media)
-│   ├── captions/              WebVTT captions (.vtt), one per story
-│   └── transcripts/           Plain-text transcripts (.txt), one per story
+│   ├── media/                 Two MP4 videos and two MP3 audio files
+│   ├── captions/              WebVTT captions, one per story
+│   └── transcripts/           Plain-text transcripts, one per story
 └── package.json               Sass build scripts
 ```
 
@@ -74,11 +74,16 @@ npm run watch        # recompile on save
 
 ---
 
-## Placeholder content
+## Current stories
 
-- `assets/media/` contains the media files referenced by the story pages: `share-excel-workbook.mp4`, `google-drive-access.mp4`, `wise-owl.mp3`, and `tedx-talk.mp3`. Replace them with real files using the same names (or update the `<source>` paths). Names are lowercase and URL-safe so they work on case-sensitive live servers.
-- Transcript and caption cues are spaced 5 seconds apart to match the 30s placeholders. When you swap in real media, update `data-start` / `data-seek` in each story's transcript and the timestamps in the matching `.vtt` file.
-- Story thumbnails are CSS gradients with descriptive `aria-label`s. Swap in `<img>` elements with `alt` text when you have photography.
+| Story | Format | Media file | Caption file | Transcript |
+|---|---|---|---|---|
+| [How to Share an Excel Workbook Online](story/share-excel-workbook.html) | Video | `assets/media/share-excel-workbook.mp4` | `assets/captions/share-excel-workbook.en.vtt` | `assets/transcripts/share-excel-workbook.txt` |
+| [Sharing Files in Google Drive](story/google-drive-access.html) | Video | `assets/media/google-drive-access.mp4` | `assets/captions/google-drive-access.en.vtt` | `assets/transcripts/google-drive-access.txt` |
+| [A Wise Old Owl](story/wise-owl.html) | Audio | `assets/media/wise-owl.mp3` | `assets/captions/wise-owl.en.vtt` | `assets/transcripts/wise-owl.txt` |
+| [TEDx Talk](story/tedx-talk.html) | Audio | `assets/media/tedx-talk.mp3` | `assets/captions/tedx-talk.en.vtt` | `assets/transcripts/tedx-talk.txt` |
+
+All media filenames are lowercase and URL-safe so they work on case-sensitive live servers. Story thumbnails are CSS gradients with descriptive `aria-label` text.
 
 ---
 
