@@ -1,0 +1,10 @@
+Sharing Files in Google Drive
+Video tutorial
+
+Transcript
+
+[0:00] In this video I'm going to show you how to give someone access to a file or folder in Google Drive. So the first thing you need to do is just head over to an internet browser and type in drive.google.com. Now once you're on your Google Drive, you need to locate the file or folder that you want to give someone access to. So let's say that this file here is the one that I want to give someone access to. What you need to do is click on the three vertical dots next to the file, select Share, and then press Share. Now before we can send someone the link, we need to make sure General access is set to Anyone with the link, and then you can decide the access for this person. So if you just want them to be able to view the document, you can set this to Viewer.
+
+[0:38] If you want to give them access so they can also edit the document as well, then we can change this to Editor, and then once you've set these permissions, you can then head over to the search box at the top, type in the email address of the person that you want to give access to.
+
+[0:51] You can see here that I have Editor selected, and then go and press Send. You can also just copy the link as well and send this directly to them. And it's really as simple as that, guys. If you did find this video helpful, then let me know in the comments, and I'll see you in the next one.

@@ -1,0 +1,10 @@
+How to Share an Excel Workbook Online
+Video tutorial
+
+Transcript
+
+[0:02] [Music] This video will show you how to share an Excel workbook online with Excel for the web. Go to this link and log in if prompted. You can use any web browser to share a workbook on Excel for the web.
+
+[0:22] Open your project or create a new one. If you already have an Excel workbook saved on your computer that you want to share, you can click Upload and Open to upload the file to Excel Online and continue following the steps to share your project. Open your project. Click Share. Click Share. Set the permissions. Click Apply. Enter the name, group, or email of who you want to share the workbook with.
+
+[0:58] You can also add a message. Click Send. You can also click Copy link to save the link to your clipboard so you can send it out manually. A link to your workbook will be sent to the people you entered previously. If you found this video helpful, please click the Like button and subscribe to our channel for even more helpful tutorials.
